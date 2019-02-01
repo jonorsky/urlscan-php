@@ -17,4 +17,21 @@ $headers = array();
 $headers[] = 'Content-Type: application/json';
 array_push($headers,"API-Key: " . $key);
 
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+$result = curl_exec($ch);
+
+
+$result_1 = json_decode($result, true);
+echo '<br>';
+print_r($result_1);
+echo '<br>';
+print($result_1['uuid']);
+echo '<br>';
+
+if (curl_errno($ch)) {
+    echo 'Error:' . curl_error($ch);
+}
+curl_close ($ch);
+
 ?>
