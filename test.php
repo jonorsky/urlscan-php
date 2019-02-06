@@ -20,7 +20,6 @@
   curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"url\": \"$url\", \"public\": \"on\", \"useragent\": \"$agent\"}");
 
   /* Start */
-
   $headers = array();
   $headers[] = 'Content-Type: application/json';
   array_push($headers,"API-Key: " . $key);
@@ -29,6 +28,7 @@
 
   $result = curl_exec($ch);
 
+  /* Display */
   $result_1 = json_decode($result, true);
   echo '<br>';
   print_r($result_1);
