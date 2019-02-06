@@ -7,6 +7,7 @@ $ch = curl_init();
 /* Guide
     - $url = your target website
     - $key = your API provided by urlscan
+    - $agent = Fix for Current Device Info
 */
 
 $url = "google.com";
