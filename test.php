@@ -6,7 +6,7 @@ $ch = curl_init();
 
 /* Guide
     - $url = your target website
-
+    - $key = your API provided by urlscan
 */
 
 $url = "google.com";
