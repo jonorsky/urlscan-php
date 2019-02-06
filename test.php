@@ -4,6 +4,11 @@ echo '<br>';
 
 $ch = curl_init();
 
+/* Guide
+    - $url = your target website
+
+*/
+
 $url = "google.com";
 $key = "";
 $agent = $_SERVER['HTTP_USER_AGENT'];
