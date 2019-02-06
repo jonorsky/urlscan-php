@@ -19,6 +19,8 @@
   curl_setopt($ch, CURLOPT_POST, 1);
   curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"url\": \"$url\", \"public\": \"on\", \"useragent\": \"$agent\"}");
 
+  /* Start */
+
   $headers = array();
   $headers[] = 'Content-Type: application/json';
   array_push($headers,"API-Key: " . $key);
